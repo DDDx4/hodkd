@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    font-family: 'Sriracha', cursive;
+    font-size: 18px;
+}
+
+body {
+    background: url('../images/complement/background.webp') no-repeat fixed center;
+    background-size: cover;
+}
+
+.checkbtn {
+    cursor: pointer;
+    position: fixed;
+    z-index: 10; 
+    top: 1rem; 
+    left:5rem;
+}
+
+#check {
+    display: none;
+    
+}
+
+#check:checked ~ nav {
+    display: flex;
+}
+
+#check:checked ~ .nav>a{
+    display: block;
+}
+
+
+#check:checked ~ .img-nav {
+    display: block;
+}
+
+
+
+.nav {
+    width: 13rem; 
+    height: auto; 
+    background: #116A7B; 
+    position: fixed; 
+    z-index: 4; 
+    top: 6rem; 
+    left:1rem;
+    border-radius: 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav>a {
+    text-decoration: none;
+    color: #ECE5C7;
+    display: none;
+    margin: 0.5rem 0 0.5rem 0;
+
+}
+
+.nav>a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 1600px) { 
+    .checkbtn {
+        position: relative;
+        z-index: 10; 
+        left: 50%;
+        right: auto;
+        margin: 0 0 2rem 0;
+    }
+
+    .nav { 
+        position: absolute; 
+        z-index: 4; 
+        left: 44%;
+        right: auto;
+        top: 6rem;
+        display: none;
+        justify-items: center;
+    }
+}
+
+.linkmanga a {
+    text-decoration: none;
+    color:#ECE5C7;
+}
